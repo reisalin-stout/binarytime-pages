@@ -15,21 +15,21 @@ body {
   align-items: flex-start;
 }
 
-/* main container */
-#root {
-  margin-top: 40px;
-  padding: 24px;
-  border: 1px solid #1f1f1f;
-  border-radius: 8px;
-  background: #111;
-}
-
 /* center everything inside app */
 .app {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* main container */
+.clock-panel {
+  padding: 24px;
+  border: 1px solid #1f1f1f;
+  border-radius: 8px;
+  background: #111;
+  width: fit-content;
 }
 
 /* tighter vertical spacing */
@@ -79,4 +79,25 @@ hr {
   border-top: 1px solid #ffffff;
   opacity: 0.25;
   margin: 12px 0;
+}
+
+.help-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #00ff9fbb;
+}
+
+.help-text {
+  max-width: 640px;
+}
+
+.help-text strong {
+  opacity: 1;
+  font-weight: 900;
+  color: #00ff9f;
 }
